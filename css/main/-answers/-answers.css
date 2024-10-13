@@ -1,0 +1,99 @@
+.main-answers {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.main-answers__item-anons {
+  background-color: #f5f5f6;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  border: 1px solid #f5f5f6;
+}
+
+.main-answers__item-title {
+  margin: 0 0 0 10px;
+  padding: 0;
+  color: #000;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.main-answers__item-icons {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-answers__item-wrap {
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0 20px 20px;
+  max-height: 0;
+  overflow: hidden;
+  font-family: "Montserrat-Medium", sans-serif;
+  transition: max-height ease-in-out 0.4s;
+}
+.main-answers__item-text {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease-in-out 0.3s;
+}
+
+.open .main-answers__item-text {
+  max-height: 500px;
+  transition: max-height ease-in-out 0.3s;
+}
+
+.open .main-answers__item-anons {
+  background-color: #fff;
+  border: 1px solid #f5f5f6;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: transparent;
+  transition: all ease-in-out 0.4s;
+}
+
+.open .main-answers__item-title {
+  color: #5497f7;
+}
+
+.main-answers__item-open {
+  transform: rotate(0deg);
+  transition: transform ease-in-out 0.4s;
+}
+
+.open .main-answers__item-open {
+  transform: rotate(180deg);
+  transition: transform ease-in-out 0.4s;
+}
+.open .main-answers__item-text {
+  max-height: 500px;
+  transition: max-height ease-in-out 0.2s;
+}
+
+.open .main-answers__item-wrap {
+  max-height: 500px;
+  border: 1px solid #f5f5f6;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  margin-bottom: 20px;
+  transition: max-height ease-in-out 0.2s;
+}

@@ -1,0 +1,41 @@
+.bread-crumbs {
+  margin-bottom: 40px;
+}
+
+.bread-crumbs__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  margin-right: 36px;
+  position: relative;
+  padding: 0;
+}
+
+.bread-crumbs__link:hover {
+  opacity: 0.7;
+}
+
+.bread-crumbs__link:last-child {
+  color: #3e97ff;
+}
+
+.bread-crumbs__link::after {
+  content: "";
+  background: url(../../img/arrow-right.png) no-repeat;
+  width: 8px;
+  height: 14px;
+  position: absolute;
+  top: 7px;
+  left: -24px;
+}
+
+.bread-crumbs__link:nth-child(1)::after {
+  content: "";
+  background: none;
+}
+
+@media screen and (max-width: 576px) {
+  .bread-crumbs__link {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,47 @@
+.main-our-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px 0 0 0;
+}
+
+.main-our-clients__title::after {
+  content: "";
+  background-image: url(../../../img/clients/clients_title_icon.svg);
+  width: 45px;
+  height: 45px;
+  right: -50px;
+  position: absolute;
+}
+
+.main-our-clients__carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-our-clients__carousel-wrap {
+  display: flex;
+  column-gap: 80px;
+  transition: all 1s ease-in-out;
+  animation: scroll 10s linear infinite;
+}
+
+.main-our-clients__carousel-img {
+  background-color: #f5f5f6;
+  width: 130px;
+  max-width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  object-fit: contain;
+  padding: 38px;
+  box-sizing: border-box;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

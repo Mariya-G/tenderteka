@@ -1,0 +1,36 @@
+.pagination__link {
+  text-decoration: none;
+  color: #000;
+  margin: 0 0 0 13px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pagination__link:first-child {
+  margin-left: 0;
+}
+
+.pagination__link_active,
+.pagination__link:hover {
+  color: #fff;
+  background-color: #5497f7;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+@media screen and (max-width: 576px) {
+  .pagination {
+    justify-content: center;
+  }
+}
